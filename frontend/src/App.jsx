@@ -20,7 +20,7 @@ import DashboardIntro from './IntroPages/DashboardIntro'
 import ApplicationIntro from './IntroPages/ApplicationIntro'
 import JobportalIntro from './IntroPages/JobportalIntro'
 import AtsIntro from './IntroPages/AtsIntro'
-import End from './IntroPages/end'
+import End from './IntroPages/End'
 
 function App() {
  
