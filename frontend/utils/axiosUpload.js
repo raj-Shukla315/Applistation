@@ -1,7 +1,7 @@
 import axios from "axios";
 
  const axiosUpload = axios.create({
-    baseURL:"http://localhost:8080/upload",
+    baseURL:"https://applistation.onrender.com/upload",
     headers:{
         "Content-Type":"multipart/form-data",
     },
