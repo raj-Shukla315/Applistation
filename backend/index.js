@@ -12,7 +12,8 @@ const TestEmailRouter = require("./routes/TestEmailRouter");
 
 // CORS: Allow your Vercel frontend
 app.use(cors({
-  origin: ["http://applistation-mu.vercel.app"],
+  origin: ["https://applistation-mu.vercel.app"], 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
 }));
 
