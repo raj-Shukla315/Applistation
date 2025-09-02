@@ -57,13 +57,13 @@ const handleUpdateapplication = async (req, res) => {
   const updates = req.body;
 
   try {
-    const updated = await MyApplications.findByIdAndUpdate(
+    const updated = await MyApplications.findOneAndUpdate(
       { _id: id, userId: req.user.userId },
       updates,
       { new: true }
     );
     if (!updated) {
-    return  res
+      return res
         .status(404)
         .json({ Message: "Application not found or unauthorized" });
     }
